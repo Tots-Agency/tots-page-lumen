@@ -3,6 +3,7 @@
 namespace Tots\Page\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Tots\Language\Models\TotsLanguage;
 
 /**
  * Description of Model
@@ -47,5 +48,14 @@ class TotsPage extends Model
      *
      * @var bool
      */
-    public $timestamps = false;    
+    public $timestamps = false;
+
+    /**
+    * 
+    * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+    */
+    public function language()
+    {
+        return $this->belongsTo(TotsLanguage::class, 'language_id');
+    }
 }
