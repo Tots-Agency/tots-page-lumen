@@ -57,6 +57,10 @@
         {
             "type": "git",
             "url": "https://github.com/tots-agency/tots-blog-lumen.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/tots-agency/tots-language-lumen.git"
         }
     ]
 }
