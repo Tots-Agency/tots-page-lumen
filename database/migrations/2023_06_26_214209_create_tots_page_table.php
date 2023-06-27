@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('title', 80)->nullable(false);
             $table->string('slug', 80)->nullable(false);
             $table->unsignedBigInteger('language_id');
+            $table->json('data')->nullable(true);
+            $table->longText('content')->nullable(true);
+            $table->tinyInteger('type')->nullable(false)->default(0);
             $table->timestamps();
 
             $table->foreign('language_id')->references('id')->on('tots_language');
