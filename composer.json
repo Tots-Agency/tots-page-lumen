@@ -6,7 +6,9 @@
     "require": {
         "php": "^8.0",
         "laravel/lumen-framework": "^10.0",
-        "tots/language-lumen": "dev-main"
+        "tots/language-lumen": "dev-main",
+        "tots/core-lumen": "dev-main",
+        "tots/elofilter-lumen": "dev-main"
     },
     "license": "MIT",
     "autoload": {
