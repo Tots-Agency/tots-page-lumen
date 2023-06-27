@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('tots_page', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 80)->nullable(false);
-            $table->string('slug', 80)->nullable(false);
+            $table->string('title', 250)->nullable(false);
+            $table->string('slug', 250)->nullable(false);
             $table->unsignedBigInteger('language_id');
             $table->json('data')->nullable(true);
             $table->longText('content')->nullable(true);
