@@ -21,7 +21,6 @@ class UpdateController extends \Laravel\Lumen\Routing\Controller
         // Update values
         $item->language_id = $request->input('language_id');
         $item->title = $request->input('title');
-        $item->slug = StringHelper::createSlug($request->input('title'));
         $item->type = $request->input('type');
         $item->content = $request->input('content');
         $item->data = $request->input('data');
